@@ -1,13 +1,12 @@
-# PROJECT: SUB STRINGS https://www.theodinproject.com/lessons/ruby-sub-strings
 # dictionary array from TOP:
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 text1 = "below" # Word to be searched, from TOP
 text2 = "Howdy partner, sit down! How's it going?" # Sentence to be searched, from TOP
-# SUBSTRINGS Method returns a hash listing each substring found 
-# in the original string and how many times it was found
+# SUBSTRINGS Method returns a hash w/ each substring found
+# in the original string + # occurrences
 def substrings (text, substringsArray) 
   # explicit empty hash to fill with the results of our program and
-  # default 0 so we can increment from something (line 20)
+  # default 0 so we can increment from something (line 18)
   substringHash = Hash.new(0)
   # Unless a sentence is broken into an array of strings, my method will only increment once
   # if it's present in the string, and not as many times as it actually exist in the text.
